@@ -34,7 +34,7 @@ public class ReadProp {
 
             System.out.println(levelName);
             Properties p = new Properties();
-            level = "level_small.properties";
+            level = "level_big_dense.properties";
             //File file = new File(level);
             File file = new File(level);    // LEVEL BIG SPARSE 1 IST BEARBEITET
             if(loadFromSaveGame) {

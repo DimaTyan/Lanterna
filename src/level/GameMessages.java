@@ -9,7 +9,8 @@ public enum GameMessages {
     SAVE("Save"),
     LOAD("Load"),
     KEYS("Keys"),
-    NEWGAME("New Game");
+    NEWGAME("New Game"),
+    QUIT("Quit");
 
     private String desc;
 

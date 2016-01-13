@@ -27,11 +27,11 @@
         <entry file="file://$PROJECT_DIR$/src/level/Field.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="309" column="23" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="23" />
+              <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7908#7909#0" expanded="true" />
-                <element signature="e#7966#7967#0" expanded="true" />
+                <element signature="e#7619#7620#0" expanded="true" />
+                <element signature="e#7677#7678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,12 +62,12 @@
       <file leaf-file-name="ReadProp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/level/ReadProp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state vertical-scroll-proportion="-6.3703704">
+              <caret line="70" column="76" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6519#6520#0" expanded="true" />
-                <element signature="e#6551#6552#0" expanded="true" />
+                <element signature="e#6523#6524#0" expanded="true" />
+                <element signature="e#6555#6556#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
               <folding>
                 <element signature="method#setX#0;class#Player#0" expanded="false" />
                 <element signature="method#getY#0;class#Player#0" expanded="false" />
@@ -101,13 +101,14 @@
       <file leaf-file-name="GameMenu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/level/GameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13786764">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.3584559">
+              <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#275#276#0" expanded="true" />
                 <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#2443#2444#0" expanded="true" />
-                <element signature="e#2476#2477#0" expanded="true" />
+                <element signature="e#2598#2599#0" expanded="true" />
+                <element signature="e#2631#2632#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/src/level/GameMessages.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -175,11 +176,11 @@
         <option value="$PROJECT_DIR$/src/obstacles/Wall.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/io/File.java" />
         <option value="$PROJECT_DIR$/src/level/MenuKeys.java" />
-        <option value="$PROJECT_DIR$/src/level/GameMessages.java" />
-        <option value="$PROJECT_DIR$/src/level/ReadProp.java" />
-        <option value="$PROJECT_DIR$/src/level/Field.java" />
         <option value="$PROJECT_DIR$/src/entities/DynObstacle.java" />
         <option value="$PROJECT_DIR$/src/entities/Player.java" />
+        <option value="$PROJECT_DIR$/src/level/ReadProp.java" />
+        <option value="$PROJECT_DIR$/src/level/Field.java" />
+        <option value="$PROJECT_DIR$/src/level/GameMessages.java" />
         <option value="$PROJECT_DIR$/src/level/GameMenu.java" />
       </list>
     </option>
@@ -805,12 +806,12 @@
       <workItem from="1452262332496" duration="46036000" />
       <workItem from="1452527539681" duration="11163000" />
       <workItem from="1452632348253" duration="3724000" />
-      <workItem from="1452679998532" duration="6634000" />
+      <workItem from="1452679998532" duration="7565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128741000" />
+    <option name="totallyTimeSpent" value="129672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -913,8 +914,8 @@
           <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6519#6520#0" expanded="true" />
-            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6523#6524#0" expanded="true" />
+            <element signature="e#6555#6556#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -945,10 +946,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -959,8 +961,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7908#7909#0" expanded="true" />
-            <element signature="e#7966#7967#0" expanded="true" />
+            <element signature="e#7619#7620#0" expanded="true" />
+            <element signature="e#7677#7678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1018,8 +1020,8 @@
           <caret line="61" column="87" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6519#6520#0" expanded="true" />
-            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6523#6524#0" expanded="true" />
+            <element signature="e#6555#6556#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1052,10 +1054,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1066,8 +1069,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7908#7909#0" expanded="true" />
-            <element signature="e#7966#7967#0" expanded="true" />
+            <element signature="e#7619#7620#0" expanded="true" />
+            <element signature="e#7677#7678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1096,8 +1099,8 @@
           <caret line="64" column="96" selection-start-line="64" selection-start-column="96" selection-end-line="64" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6519#6520#0" expanded="true" />
-            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6523#6524#0" expanded="true" />
+            <element signature="e#6555#6556#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1288,38 +1291,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/FKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/level/MenuKeys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/level/ReadProp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6519#6520#0" expanded="true" />
-            <element signature="e#6551#6552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/level/GameMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1337,10 +1312,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/FKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="method#setX#0;class#Player#0" expanded="false" />
             <element signature="method#getY#0;class#Player#0" expanded="false" />
@@ -1350,27 +1333,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/level/ReadProp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3703704">
+          <caret line="70" column="76" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6523#6524#0" expanded="true" />
+            <element signature="e#6555#6556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/level/Field.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="309" column="23" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="23" />
+          <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7908#7909#0" expanded="true" />
-            <element signature="e#7966#7967#0" expanded="true" />
+            <element signature="e#7619#7620#0" expanded="true" />
+            <element signature="e#7677#7678#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/level/GameMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/level/GameMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13786764">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.3584559">
+          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>

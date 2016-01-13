@@ -44,7 +44,7 @@ public class Field {
     private boolean moveDynNotVisible = false;
 
 
-    public Field() throws IOException {
+    public Field()  {
 
         TerminalAppearance ta = TerminalAppearance.DEFAULT_APPEARANCE.withFont(TerminalAppearance.DEFAULT_NORMAL_FONT.deriveFont(20f));
         terminal = TerminalFacade.createSwingTerminal(ta);  // TerminalFacade.createTerminal(); ???????
@@ -110,14 +110,6 @@ public class Field {
                 printPlayerStatus();
             } catch (Exception e) {//e.printStackTrace();
             }
-            /*if (dead) {
-                terminal.clearScreen();
-                MessageManager.printText(terminal, 0, 0, GameMessages.LOST.toString(), Terminal.Color.RED);
-                // maybe print game status before death or so
-                executor.shutdown();
-                break;
-            }*/
-
         }
     }
 
@@ -149,6 +141,7 @@ public class Field {
                 MenuKeys mKeys = new MenuKeys(terminal);
                 mKeys.createMenu();
                 break;
+            case 4: System.exit(0);break;
         }
         if(!newgame) {
             terminal.clearScreen();
@@ -361,7 +354,9 @@ public class Field {
                 System.out.println("ran into enemy");
                 p.setLives(p.getLives() - 1);
                 if (p.getLives() == 0) dead = true;
-                //p.setNotHitable(terminal);
+                /*pause = true;
+                p.setNotHitable(terminal);
+                pause = false;*/
                 printPlayerStatus();
                 return true;
             }
@@ -388,12 +383,12 @@ public class Field {
                     executor.shutdown();
                     terminal.clearScreen();
                 } else {
-                    //p.setNotHitable(terminal);
+
                     printPlayerStatus();
-                    pause = true;
-                    try{Thread.sleep(2000);
+                    /*pause = true;
+                    try{p.setNotHitable(terminal);
                     pause = false;
-                    }catch (Exception e){}
+                    }catch (Exception e){}*/
                 }
             }
             return true;

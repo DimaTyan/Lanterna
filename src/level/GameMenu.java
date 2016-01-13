@@ -27,6 +27,8 @@ public class GameMenu {
         MessageManager.printText(ter,centerX, centerY+1 ,GameMessages.SAVE.toString());
         MessageManager.printText(ter,centerX, centerY+2, GameMessages.LOAD.toString());
         MessageManager.printText(ter,centerX, centerY+3, GameMessages.KEYS.toString());
+        MessageManager.printText(ter,centerX, centerY+4, GameMessages.QUIT.toString());
+
         ter.moveCursor(centerX, centerY);
         cursorY = centerY;
     }
@@ -42,7 +44,7 @@ public class GameMenu {
                 if (key.getKind() != null) {
                     if (key.getKind() == Key.Kind.ArrowDown) {
 
-                        if(cursorY == centerY+3) cursorY = centerY+3;
+                        if(cursorY == centerY+4) cursorY = centerY+4;
                         else cursorY++;
                         ter.moveCursor(centerX,cursorY);
 
@@ -57,6 +59,7 @@ public class GameMenu {
                         else if(cursorY == centerY+1) option = 1;
                         else if(cursorY == centerY+2) option = 2;
                         else if(cursorY == centerY+3) option = 3;
+                        else if(cursorY == centerY+4) option = 4;
                         ter.setCursorVisible(false);
                         return true;
                     }
