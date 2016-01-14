@@ -100,7 +100,7 @@ public class Player {
 
         terminal.moveCursor(x, y);
         terminal.putCharacter(' '); // zum überschreiben der alten position
-        setY(yPos);
+        setY(yPos); // setze neue position
         setX(xPos);
         terminal.applyForegroundColor(COLOR);
         terminal.moveCursor(xPos, yPos);

@@ -8,6 +8,6 @@ import java.io.IOException;
 public class TestField {
 
     public static void main(String[] args) throws IOException{
-        Field f = new Field();
+        Field f = new Field(); // erzeugt das spielfeld
     }
 }

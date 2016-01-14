@@ -15,14 +15,14 @@ public class MenuKeys {
     public MenuKeys(Terminal t){
 
         this.t = t;
-        this.t.clearScreen();
+        this.t.clearScreen();   // löscht den bildschirm
     }
 
-    public void createMenu(){
+    public void createKeys(){
 
         t.applyForegroundColor(FKey.getColorcode());
-        MessageManager.printText(t,0,0, FKey.getCharcode()+" = schlüssel");
-
+        MessageManager.printText(t,0,0, FKey.getCharcode()+" = schlüssel"); // schreibt die einzelnen symbole und ihre bedeutung
+                                                                            // messagemanager ist eine klasse zum einfacheren schreiben von strings
         t.applyForegroundColor(Player.getColorcode());
         MessageManager.printText(t,0,1, Player.getPlayercode()+" = spieler");
 
@@ -49,7 +49,7 @@ public class MenuKeys {
             try{
 
                 if(key.getKind() != null){
-                    if(key.getKind() == Key.Kind.Escape){
+                    if(key.getKind() == Key.Kind.Escape){   // falls escape gedrückt wird, kommt man aus der legende raus
                         readingIn = false;
                     }
                 }

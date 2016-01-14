@@ -2,15 +2,17 @@ package obstacles;
 
 import com.googlecode.lanterna.terminal.Terminal;
 import java.awt.*;
-/**
- * Created by Dimitri on 26.12.15.
- */
+
+
 public class Exit extends Obstacle{
+
+    // visuelle codierung des ausgangs
 
     private static final char CHARCODE = '\u2690';
     private static final Terminal.Color COLORCODE = Terminal.Color.GREEN;
 
-    public Exit(int x, int y){
+
+    public Exit(int x, int y){  // initialisiert die werte mit den koordinaten und codierung
         this.x = x;
         this.y = y;
         charCode = CHARCODE;

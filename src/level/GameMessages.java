@@ -1,7 +1,7 @@
 package level;
 
 
-public enum GameMessages {
+public enum GameMessages {  // enum für menü-optionen
 
     LOST("you lost :( RIP"),
     WON("you won :)"),
