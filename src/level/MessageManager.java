@@ -2,10 +2,11 @@ package level;
 
 import com.googlecode.lanterna.terminal.Terminal;
 
-/**
- * Created by Dimitri on 05.01.16.
- */
+
 public class MessageManager {
+
+    // klasse stellt 2 methoden bereit, einmal zum schreiben mit und ohne angabe der farbe
+    // erleichtert string ausgaben auf dem terminal
 
     public static void printText(Terminal t, int x, int y,String text, Terminal.Color color){
 

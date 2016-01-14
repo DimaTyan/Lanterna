@@ -3,7 +3,7 @@ package level;
 import com.googlecode.lanterna.input.Key;
 import com.googlecode.lanterna.terminal.Terminal;
 
-public class GameMenu {
+public class GameMenu { // klasse für das menü
 
     private Terminal ter;
     private int cursorY;
@@ -14,7 +14,7 @@ public class GameMenu {
         this.ter = t;
     }
 
-    public void createMenu(boolean newgame){
+    public void createMenu(boolean newgame){    // erzeugt menü mit optionen zur auswahl
         ter.clearScreen();
         ter.setCursorVisible(true);
         ter.applyForegroundColor(Terminal.Color.WHITE);
@@ -44,7 +44,7 @@ public class GameMenu {
                 if (key.getKind() != null) {
                     if (key.getKind() == Key.Kind.ArrowDown) {
 
-                        if(cursorY == centerY+4) cursorY = centerY+4;
+                        if(cursorY == centerY+4) cursorY = centerY+4;  // holt sich abhängig vom cursor die ausgewählte option
                         else cursorY++;
                         ter.moveCursor(centerX,cursorY);
 
@@ -56,7 +56,7 @@ public class GameMenu {
                     } else if (key.getKind() == Key.Kind.Enter) {
                         selecting = false;
                         if(cursorY == centerY) option = 0;
-                        else if(cursorY == centerY+1) option = 1;
+                        else if(cursorY == centerY+1) option = 1;   // centerY ist die erste option centerY+1 die zweite usw...
                         else if(cursorY == centerY+2) option = 2;
                         else if(cursorY == centerY+3) option = 3;
                         else if(cursorY == centerY+4) option = 4;
@@ -76,5 +76,5 @@ public class GameMenu {
 
     public int getOption(){
         return option;
-    }
+    }   // gibt die gewählte option wieder
 }
