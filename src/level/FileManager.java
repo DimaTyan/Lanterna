@@ -158,8 +158,9 @@ public class FileManager {
                 throw new FileNotFoundException("property file " + file + " not found");
             }
 
-            String levelName = p.getProperty("level");
-            loadStartLevel(true, levelName);    // lade das ursprüngliche level ohne dynamishce gegner und schlüssel,
+            String loadedLevel = p.getProperty("level");
+            this.level = loadedLevel;
+            loadStartLevel(true, loadedLevel);    // lade das ursprüngliche level ohne dynamishce gegner und schlüssel,
                                                 // da diese in savegame gespeichert sind
             Enumeration<?> keysFromProp = p.propertyNames();
 
