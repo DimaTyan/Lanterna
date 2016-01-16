@@ -90,6 +90,7 @@ public class Field {
         p.setAbsX(absoluteX);
         p.setAbsY(absoluteY);
         spawnObstacles();   // zeichne die objekte
+        addDynEnems();
         p.setX(absoluteX - xOffset);
         p.setY(absoluteY - yOffset);
         terminal.applyForegroundColor(p.getColor());
@@ -148,10 +149,12 @@ public class Field {
                 fp.save(obstacles, dynEnem, p); // 1 -> speichern
                 break;
             case 2: // 2-> lade spielstand, ein spielstand lade ich hoch, dieser kann durch speichern überschrieben werden
+                terminal.clearScreen();
                 fp.load(p);
                 dynEnem.clear();
                 setAbsoluteValues();
                 obstacles = fp.getObstacles();
+                addDynEnems();
                 break;
             case 3: // 3-> zeigt die legende
                 MenuKeys mKeys = new MenuKeys(terminal);
@@ -174,8 +177,8 @@ public class Field {
         if (!dead && !pause) {
             for (DynObstacle enem : dynEnem) {
 
+                System.out.println(dynEnem.size());
                 int r = enem.getRandom();   // direction is set, cooridinates aren't
-
                 int x = enem.getX() - xOffset;  // hole die x und y koords, und ziehe den offset ab
                 int y = enem.getY() - yOffset;  // offset ist die anzahl der terminallängen und breiten die benötigt werden, damit
                                                 // die objekte auf die terminalgröße passen
@@ -218,19 +221,21 @@ public class Field {
                 if (!dead) {
                     //obstacles[enem.getX()][enem.getY()] = null;
 
+                    if(isDynObstVisible(enem)){
+                        enem.removeOldPos(terminal, x, y);
+                    }
+                    enem.set();
                     if(isDynObstVisible(enem)) {
                         //System.out.println("dyn is visible");
-                        enem.removeOldPos(terminal,xOffset, yOffset);   // wenn der spieler sichtbar ist, soll er gezeichnet werden
-                        enem.set();
+                        enem.removeOldPos(terminal, x,y);   // wenn der spieler sichtbar ist, soll er gezeichnet werden
+                        //enem.set();
                         enem.draw(terminal,xOffset,yOffset);
                         obstacles[enem.getY()][enem.getX()] = enem; // speicherung der koordinaten [y-werte][x-werte]
                     }
-                    else{   // wenn der gegner nicht in das terminal "passt", sollen die koordianten trotzdem gesetzt werden
-                            // da der spieler erreicht werden muss
-                            // es wird nicht gezeichnet, da die gegner sonst an den jeweiligen rändern des terminal gezeichnet werden
-                        //System.out.println("dyn is not visible");
-                        enem.set();
-                    }
+                    // wenn der gegner nicht in das terminal "passt", sollen die koordianten trotzdem gesetzt werden
+                    // da der spieler erreicht werden muss
+                    // es wird nicht gezeichnet, da die gegner sonst an den jeweiligen rändern des terminal gezeichnet werden
+
                     printEnemy();
                 }
             }
@@ -456,8 +461,20 @@ public class Field {
                     if (obstacle instanceof Entrance) {
                         spawnX = xCoord;
                         spawnY = yCoord;
-                    } else if (obstacle instanceof DynObstacle) {
-                        //dynEnem.clear();
+                    }
+                }
+            }
+        }
+    }
+
+    private void addDynEnems(){
+        for (int yCoord = 0; yCoord < obstacles.length; yCoord++) {
+            for (int xCoord = 0; xCoord < obstacles[yCoord].length; xCoord++) {
+
+                if (obstacles[yCoord][xCoord] != null) {
+
+                    Obstacle obstacle = obstacles[yCoord][xCoord];
+                    if (obstacle instanceof DynObstacle) {
                         dynEnem.add((DynObstacle) obstacle);
                     }
                 }

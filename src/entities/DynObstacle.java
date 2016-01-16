@@ -51,8 +51,8 @@ public class DynObstacle extends Obstacle {
         }
 
     }
-    public void removeOldPos(Terminal t,int xOffset, int yOffset){  // entfernt die alte position eines  dynamischen gegners
-        t.moveCursor(x-xOffset, y-yOffset);
+    public void removeOldPos(Terminal t, int xOld, int yOld){  // entfernt die alte position eines  dynamischen gegners
+        t.moveCursor(xOld, yOld);
         t.putCharacter(' ');
     }
 
