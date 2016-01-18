@@ -8,7 +8,7 @@ import obstacles.Obstacle;
  */
 public class FKey extends Obstacle{
 
-    private static final char CHARCODE = '\ua117';
+    private static final char CHARCODE = 'k';
     private static final Terminal.Color COLORCODE = Terminal.Color.YELLOW;
 
     public FKey(int x, int y){

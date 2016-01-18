@@ -176,8 +176,7 @@ public class Field {
 
         if (!dead && !pause) {
             for (DynObstacle enem : dynEnem) {
-
-                System.out.println(dynEnem.size());
+                
                 int r = enem.getRandom();   // direction is set, cooridinates aren't
                 int x = enem.getX() - xOffset;  // hole die x und y koords, und ziehe den offset ab
                 int y = enem.getY() - yOffset;  // offset ist die anzahl der terminallängen und breiten die benötigt werden, damit

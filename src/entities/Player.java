@@ -8,7 +8,7 @@ import com.googlecode.lanterna.terminal.Terminal;
 public class Player {
 
     private int x,y;
-    private static final char PLAYERCODE = '\u263b';
+    private static final char PLAYERCODE = 'p';
     private boolean hasKey = false; // ob spieler einen schlüssel hat
     private static final Terminal.Color COLOR = Terminal.Color.YELLOW;
     private int lives = 3;  // 3 leben zu beginn

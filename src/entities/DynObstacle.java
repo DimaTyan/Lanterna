@@ -12,7 +12,7 @@ public class DynObstacle extends Obstacle {
     Random r = new Random();
     private int dir;
 
-    public static final char CHARCODE = '\u2603';   // zeichen für gegner
+    public static final char CHARCODE = 'd';   // zeichen für gegner
     public static final Terminal.Color COLORCODE = Terminal.Color.WHITE;    // farbe des gegner
 
     public DynObstacle(int x, int y) {  // initialisiert die werte

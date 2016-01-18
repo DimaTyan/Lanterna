@@ -8,7 +8,7 @@ public class Exit extends Obstacle{
 
     // visuelle codierung des ausgangs
 
-    private static final char CHARCODE = '\u2690';
+    private static final char CHARCODE = 'e';
     private static final Terminal.Color COLORCODE = Terminal.Color.GREEN;
 
 

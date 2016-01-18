@@ -12,7 +12,7 @@ public class Wall extends Obstacle{
     // visuelle codierung der wände
 
     int x,y;
-    private static final char CHARCODE = '\u2630';
+    private static final char CHARCODE = 'w';
     private static final Terminal.Color COLORCODE= Terminal.Color.MAGENTA ;
 
     public Wall(int x, int y){ // initialisiert die werte mit den koordinaten und codierung
