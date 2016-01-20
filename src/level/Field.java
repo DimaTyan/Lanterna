@@ -297,7 +297,7 @@ public class Field {
 
             if (!isColliding(p.getX(), p.getY() - 1)) {
 
-                if (onKey(p.getX(), p.getY() + 1)) {
+                if (onKey(p.getX(), p.getY() - 1)) {
                     p.setHasKey(true);
                 }
 
@@ -333,6 +333,8 @@ public class Field {
 
         }
 
+        System.out.println("p.getX()"+p.getX());
+        System.out.println("p.getY()"+p.getY());
 
         if (!isVisible(p.getX(), p.getY())) { // wenn der spieler nicht mehr sichtbar ist render den neuen teil der map
             //render new map
