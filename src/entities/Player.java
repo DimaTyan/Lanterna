@@ -10,7 +10,7 @@ public class Player {
     private int x,y;
     private static final char PLAYERCODE = 'p';
     private boolean hasKey = false; // ob spieler einen schlüssel hat
-    private static final Terminal.Color COLOR = Terminal.Color.YELLOW;
+    private static final Terminal.Color COLOR = Terminal.Color.WHITE;
     private int lives = 3;  // 3 leben zu beginn
     private int absX, absY; // absolute koordinaten wie sie in der properties stehen, um den offset zu berechnen
 

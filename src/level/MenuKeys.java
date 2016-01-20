@@ -5,6 +5,7 @@ import com.googlecode.lanterna.terminal.Terminal;
 import entities.DynObstacle;
 import entities.FKey;
 import entities.Player;
+import obstacles.Entrance;
 import obstacles.Exit;
 import obstacles.StatObstacle;
 import obstacles.Wall;
@@ -32,12 +33,17 @@ public class MenuKeys {
         t.applyForegroundColor(Exit.getColorcode());
         MessageManager.printText(t,0,3, Exit.getCharcode()+" = ausgang");
 
+        t.applyForegroundColor(Entrance.getColorcode());
+        MessageManager.printText(t,0,4, Entrance.getCharcode()+" = eingang");
+
         t.applyForegroundColor(StatObstacle.getColorcode());
-        MessageManager.printText(t,0,4, StatObstacle.getCharcode()+" = statischer Gegner");
+        MessageManager.printText(t,0,5, StatObstacle.getCharcode()+" = statischer Gegner");
 
         t.applyForegroundColor(DynObstacle.COLORCODE);
-        MessageManager.printText(t,0,5, DynObstacle.CHARCODE+" = dynamischer Gegner");
-        MessageManager.printText(t,0,6, "drücke esc um wieder zum spiel zu kommen");
+        MessageManager.printText(t,0,6, DynObstacle.CHARCODE+" = dynamischer Gegner");
+
+        t.applyForegroundColor(Terminal.Color.WHITE);
+        MessageManager.printText(t,0,7, "drücke esc um wieder zum spiel zu kommen");
         leaveKeys(t);
     }
 

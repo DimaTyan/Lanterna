@@ -6,13 +6,13 @@ public class Entrance extends Obstacle {
 
     // visuelle codierung des eingangs
 
-    private static final char CHARCODE = '\u26d4';
-    private static final Terminal.Color COLORCODE = Terminal.Color.RED;
+    private static final char CHARCODE = 'c';
+    private static final Terminal.Color COLORCODE = Terminal.Color.BLUE;
 
     public Entrance(int x, int y){  // initialisiert die werte mit koordinaten und codierung
         this.x = x;
         this.y = y;
-        charCode = 'e';
+        charCode = CHARCODE;
         color = COLORCODE;
     }
 

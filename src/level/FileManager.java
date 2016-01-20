@@ -40,7 +40,7 @@ public class FileManager {
 
             System.out.println(levelName);
             Properties p = new Properties();
-            level = "level.properties";   //lädt das hier angegebene level
+            level = "level_big_dense.properties";   //lädt das hier angegebene level
             //File file = new File(level);
             File file = new File(level);    // datei wird in file gespeichert
             if(loadFromSaveGame) {
